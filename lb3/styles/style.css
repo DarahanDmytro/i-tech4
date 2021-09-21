@@ -1,0 +1,83 @@
+header, footer, main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.--day{
+    background-color: yellow;
+    color: black;
+}
+
+main.--day, main *.--day{
+    background-color:  rgb(240,240,240);
+}
+
+img.--day, #clock .--day{
+    border:10px solid black;
+    background-color: lightgray;
+    color: black;
+}
+
+.--night{
+    background-color: black;
+    color: white;
+}
+
+main.--night, main * .--night{
+    background-color: rgb(60,60,60);
+}
+
+img.--night{
+    border: 10px solid white;
+    background-color: black;
+    color: white;
+}
+
+header{
+   position: absolute;
+   top: 0;
+   left: 0;
+   margin: 0;
+   width: 100vw;
+   height: 20vh;
+}
+
+main {
+   position: absolute;
+   top: 20vh;
+   left: 0;
+   width: 100vw;
+   height: 60vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+footer{
+   position: absolute;
+   top: 80vh;
+   left: 0;
+   height: 20vh;
+   width: 100vw;
+}
+
+img {
+   display: block;
+   width: 250px;
+   height: 250px;
+}
+
+#clock {
+    display: flex;
+    justify-content: center;
+    font-size: 72px;
+    font-weight: bold;
+    width: 30vw;
+}
+
+label{
+    font-weight: bold;
+}

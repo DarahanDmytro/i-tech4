@@ -1,0 +1,97 @@
+@charset "utf8";
+
+@font-face {
+    font-family: "Gothic Red";
+    src: url("fonts/FortunaGothicFlorishC.ttf");
+}@font-face {
+    font-family: "Deutsche";
+    src: url("fonts/DeutschGothic.ttf");
+}
+
+
+body {
+          --ofset: 80;
+	  background-color: lightgray;
+}
+      
+.justificator{
+	  display: flex;
+	  flex-direction: column;
+	  justify-content: center;
+	  align-items: baseline;
+}
+      
+header {
+	  position: absolute;
+	  border-bottom: 5px groove black;
+	  top: 0;
+	  left: 0;
+	  height: calc(var(--ofset)*1px);
+	  padding: 0 0;
+	  width: 100%;
+	  margin: auto;
+	  z-index: 100;
+}
+      
+main {
+	  width: 100%;
+          position: relative;
+	  top:  calc(var(--ofset)*1px);
+	  z-index: 1;
+}	  
+      
+footer {
+	  position: relative;
+          display: flex;
+	  flex-direction: row;
+	  justify-content: center;
+	  align-items: baseline;
+	  padding: 10px;
+	  width: 100%;
+	  left: -1%;
+	  margin: 0;
+	  top:  calc(var(--ofset)*1px);
+	  z-index: 100;
+ }
+
+ #lorem{
+	  border: 5px solid red;
+	  padding: 2%;
+          margin: 2% 5%;
+	  background-color: lime;
+}
+ 
+#lorem p{
+	  padding: 10px;
+          background-color: yellow;
+	  border: 3px groove black;
+	  border-radius: 10px;
+	  font-family: "Deutsche";
+}
+      
+#lorem p:first-letter{
+    color: red;
+    font-family: "Gothic Red";
+    font-weight: bolder;
+    font-size: 5em;
+}
+
+#lorem p::after{
+          content: "(Marcus Tullius Cicero)";
+	  font-weight: 100;
+	  font-style: oblique;
+}
+
+#myform{
+	  background-color: white;
+	  margin: 20px;
+	  padding: 20px;
+	  border: 5px solid black;
+}
+
+.warn{
+    visibility: hidden;
+    font-weight: bold;
+    font-size: 20pt;
+ }
+      

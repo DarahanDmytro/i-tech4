@@ -1,0 +1,43 @@
+header{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 25vh;
+    background: red;
+    color: black;
+}
+
+main{
+    position: absolute;
+    top: 25vh;
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-around;
+}
+
+form{
+    order: 2; 
+    padding: 10px;
+    border: 1px solid black;
+    flex-basis: 0.4;
+}
+
+aside{
+    order: 1;
+    background: lightgray;
+    border: 3px solid black;
+    flex-basis: 0.6;
+}
+
+footer{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 75vh;
+}
